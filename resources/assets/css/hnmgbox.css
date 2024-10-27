@@ -2633,13 +2633,13 @@ html #hncore {
 #hncore .hnmgbox .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
     margin: 0 5px 3px 0;
     transform: scale(.9);
-    background-image: url(../img/icheck/blue.png)
+    background-image: url(../images/icheck/blue.png)
 }
 
 #hncore .hnmgbox .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue {
     margin: 0 5px 3px 0;
     transform: scale(.9);
-    background-image: url(../img/icheck/blue.png)
+    background-image: url(../images/icheck/blue.png)
 }
 
 #hncore .hnmgbox .hnmgbox-type-image_selector .hnmgbox-content,#hncore .hnmgbox .hnmgbox-type-import .hnmgbox-content {
@@ -2867,7 +2867,7 @@ html #hncore {
     right: 4px;
     width: 20px;
     height: 20px;
-    background: url(../img/alpha.png) repeat;
+    background: url(../images/alpha.png) repeat;
     cursor: pointer
 }
 
@@ -3190,7 +3190,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-blue .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-blue .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-blue .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/blue.png)
+    background-image: url(../images/icheck/blue.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-blue .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-blue .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3256,7 +3256,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-lightblue .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-lightblue .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-lightblue .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/lightblue.png)
+    background-image: url(../images/icheck/lightblue.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-lightblue .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-lightblue .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3322,7 +3322,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-green .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-green .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-green .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/green.png)
+    background-image: url(../images/icheck/green.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-green .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-green .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3388,7 +3388,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-teal .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-teal .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-teal .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/teal.png)
+    background-image: url(../images/icheck/teal.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-teal .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-teal .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3461,7 +3461,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-pink .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-pink .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-pink .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/pink.png)
+    background-image: url(../images/icheck/pink.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-pink .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-pink .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3527,7 +3527,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-purple .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-purple .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-purple .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/purple.png)
+    background-image: url(../images/icheck/purple.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-purple .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-purple .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3593,7 +3593,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-bluepurple .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-bluepurple .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-bluepurple .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/bluepurple.png)
+    background-image: url(../images/icheck/bluepurple.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-bluepurple .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-bluepurple .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3659,7 +3659,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-yellow .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-yellow .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-yellow .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/yellow.png)
+    background-image: url(../images/icheck/yellow.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-yellow .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-yellow .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
@@ -3725,7 +3725,7 @@ html #hncore {
 }
 
 #hncore .hnmgbox.hnmgbox-skin-orange .hnmgbox-type-checkbox .hnmgbox-field .icheckbox_flat-blue,#hncore .hnmgbox.hnmgbox-skin-orange .hnmgbox-type-import .hnmgbox-field .iradio_flat-blue,#hncore .hnmgbox.hnmgbox-skin-orange .hnmgbox-type-radio .hnmgbox-field .iradio_flat-blue {
-    background-image: url(../img/icheck/orange.png)
+    background-image: url(../images/icheck/orange.png)
 }
 
 #hncore .hnmgbox.hnmgbox-skin-orange .hnmgbox-type-image_selector .hnmgbox-radiochecks img.hnmgbox-active,#hncore .hnmgbox.hnmgbox-skin-orange .hnmgbox-type-import .hnmgbox-radiochecks img.hnmgbox-active {
