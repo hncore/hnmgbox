@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HNMGBOX Framework\n"
+"POT-Creation-Date: 2016-12-30 01:34-0500\n"
+"PO-Revision-Date: 2024-10-28 03:47+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: hnmgbox.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;"
+"__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Admin Page"
+msgstr "Trang Quản trị"
+
+msgid "HNMGBOX Page"
+msgstr "Trang HNMGBOX"
+
+msgid "Settings updated"
+msgstr "Cài đặt đã được cập nhật"
+
+msgid "Settings reset"
+msgstr "Cài đặt đã được đặt lại"
+
+msgid "Settings imported"
+msgstr "Cài đặt đã được nhập"
+
+msgid "There were problems importing the data. Please try again."
+msgstr "Đã có vấn đề khi nhập dữ liệu. Vui lòng thử lại."
+
+msgid "Save Changes"
+msgstr "Lưu Thay đổi"
+
+msgid "Reset to Defaults"
+msgstr "Đặt lại về Mặc định"
+
+msgctxt "Button - On confirm popup"
+msgid "Accept"
+msgstr "Chấp nhận"
+
+msgid "Reset theme options"
+msgstr "Đặt lại tùy chọn chủ đề"
+
+msgid "Are you sure you want to reset all options to the default values? All saved data will be lost."
+msgstr "Bạn có chắc chắn muốn đặt lại tất cả các tùy chọn về giá trị mặc định không? Tất cả dữ liệu đã lưu sẽ bị mất."
+
+msgctxt "Button - On confirm popup"
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+msgctxt "Title - On popup \"remove item\""
+msgid "Delete"
+msgstr "Xóa"
+
+msgctxt "Content - On popup \"remove item\""
+msgid "Are you sure you want to delete?"
+msgstr "Bạn có chắc chắn muốn xóa không?"
+
+msgctxt "Title - On popup \"Validation url\""
+msgid "Validation"
+msgstr "Xác thực"
+
+msgctxt "Content - On popup \"Validation url\""
+msgid "Please enter a valid url"
+msgstr "Vui lòng nhập một URL hợp lệ"
+
+msgctxt "Title - On popup \"Reset values\""
+msgid "Reset values"
+msgstr "Đặt lại giá trị"
+
+msgctxt "Content - On popup \"Reset values\""
+msgid "Are you sure you want to reset all options to the default values? All saved data will be lost."
+msgstr "Bạn có chắc chắn muốn đặt lại tất cả tùy chọn về giá trị mặc định không? Mọi dữ liệu đã lưu sẽ bị mất."
+
+msgctxt "Title - On popup \"Import values\""
+msgid "Import values"
+msgstr "Nhập giá trị"
+
+msgctxt "Content - On popup \"Import values\""
+msgid "Are you sure you want to import all options? All current values will be lost and well be overwritten."
+msgstr "Bạn có chắc chắn muốn nhập tất cả các tùy chọn không? Mọi giá trị hiện tại sẽ bị mất và sẽ bị ghi đè."
+
+msgid "Enter a valid json url"
+msgstr "Nhập một URL json hợp lệ"
+
+msgid "Upload file"
+msgstr "Tải lên tệp"
+
+msgid "Upload image"
+msgstr "Tải lên hình ảnh"
+
+msgctxt "New item for groups"
+msgid "Add new"
+msgstr "Thêm mới"
+
+msgctxt "Remove item for groups"
+msgid "Remove"
+msgstr "Xóa"
+
+msgid "Import"
+msgstr "Nhập"
+
+msgctxt "Import/Export field"
+msgid "From file"
+msgstr "Từ tệp"
+
+msgctxt "Import/Export field"
+msgid "From url"
+msgstr "Từ URL"
+
+msgid "Download"
+msgstr "Tải về"
+
+msgid "Get preview"
+msgstr "Xem trước"
+
+msgctxt "New item for repeatable fields"
+msgid "Add new"
+msgstr "Thêm mới"
+
+msgctxt "Remove item for repeatable fields"
+msgid "Remove"
+msgstr "Xóa"
+
+msgid "Duplicate"
+msgstr "Sao chép"
+
+msgid "Sort"
+msgstr "Sắp xếp"
+
+msgid "Visibility"
+msgstr "Hiển thị"
+
+msgid "No oEmbed results found for %s. See"
+msgstr "Không tìm thấy kết quả oEmbed cho %s. Xem"
+
+msgid "HNMGBOX Metabox"
+msgstr "HNMGBOX Metabox"
+
+msgid "HNMGBOX Framework"
+msgstr "HNMGBOX Framework"
+
+msgid "HNMGBOX is a powerful framework to create beautiful, professional and flexibles Meta boxes and Admin pages. Building meta boxes or admin pages has never been easier!"
+msgstr "HNMGBOX là một framework mạnh mẽ để tạo các hộp Meta và trang quản trị đẹp, chuyên nghiệp và linh hoạt. Việc xây dựng các hộp meta hoặc trang quản trị chưa bao giờ dễ dàng đến vậy!"

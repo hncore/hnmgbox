@@ -1,0 +1,24 @@
+{
+    "name": "hncore/hnmgbox",
+    "type": "wordpress-plugin",
+    "description": "Framework Wordpress By HNCore",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HauN",
+            "email": "haunytb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HNMG\\": "src/"
+        }
+    },
+    "extra": {
+        "acorn": {
+            "providers": [
+                "HNMG\\Providers\\BoxServiceProvider"
+            ]
+        }
+    }
+}
