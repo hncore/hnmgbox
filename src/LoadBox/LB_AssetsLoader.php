@@ -41,7 +41,7 @@ class LB_AssetsLoader {
 			'hnmgbox-ace-editor' 		=> 'libs/ace/ace.js',
 			'hnmgbox' 					=> 'assets/js/hnmgbox.js',
 			'hnmgbox-events' 			=> 'assets/js/hnmgbox-events.js',
-			'hnmgbox-icheck' 			=> 'assets/js/hnmgbox-icheck.js',
+			//'hnmgbox-icheck' 			=> 'assets/js/hnmgbox-icheck.js',
 		];
 
 		foreach ($scripts as $handle => $src) {
