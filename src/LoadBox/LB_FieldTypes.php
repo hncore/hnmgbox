@@ -73,11 +73,6 @@ class LB_FieldTypes {
         $value = $this->field->get_value();
         $value = $this->field->validate_colorpicker( $value );
         $return = '';
-        if( $this->field->arg( 'options', 'show_default_button' ) ){
-            $return .= "<div class='hnmgbox-colorpicker-default-btn' title='" . __( 'Set default color', 'hnmgbox' ) . "'>";
-            $return .= "<i class='hnmgbox-icon hnmgbox-icon-eraser'></i>";
-            $return .= "</div>";
-        }
         $return .= $this->build_input( 'text', $value );
         $return .= "<div class='hnmgbox-colorpicker-preview'>";
         $return .= "<span class='hnmgbox-colorpicker-color' value='$value'></span>";
