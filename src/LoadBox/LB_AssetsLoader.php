@@ -29,6 +29,7 @@ class LB_AssetsLoader {
 			return;
 		}
 		$scripts = [
+			'hnmgbox-radiocheckbox' 		=> 'assets/js/hnmgbox-icheck.js',
 			//'hnmgbox-sui-dropdown' 		=> 'libs/semantic-ui/components/dropdown.js',
 			//'hnmgbox-sui-transition' 	=> 'libs/semantic-ui/components/transition.min.js',
 			//'hnmgbox-tipso' 			=> 'assets/js/hnmgbox-tipso.js',
@@ -41,7 +42,6 @@ class LB_AssetsLoader {
 			'hnmgbox-ace-editor' 		=> 'libs/ace/ace.js',
 			'hnmgbox' 					=> 'assets/js/hnmgbox.js',
 			'hnmgbox-events' 			=> 'assets/js/hnmgbox-events.js',
-			//'hnmgbox-icheck' 			=> 'assets/js/hnmgbox-icheck.js',
 		];
 
 		foreach ($scripts as $handle => $src) {
@@ -82,7 +82,7 @@ class LB_AssetsLoader {
 			'hnmgbox-sui-menu' 			=> 'libs/semantic-ui/components/menu.min.css',
 			'hnmgbox-tipso' 			=> 'assets/css/hnmgbox-tipso.css',
 			'hnmgbox-switcher' 			=> 'assets/css/hnmgbox-switcher.css',
-			'hnmgbox-radiocheckbox' 	=> 'assets/skins/minimal/_all.css',
+			'hnmgbox-radiocheckbox' 	=> 'assets/skins/flat/_all.css',
 			'hnmgbox' 					=> 'assets/css/hnmgbox.css',
 		];
 		
