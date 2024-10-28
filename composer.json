@@ -10,10 +10,13 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "HNMG\\": "src/"
-        }
-    },
+		"psr-4": {
+			"HNMG\\": "src/"
+		},
+		"files": [
+			"src/setup.php"
+		]
+	},
     "extra": {
         "acorn": {
             "providers": [
