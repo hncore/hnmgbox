@@ -3819,3 +3819,7 @@ html #hncore {
     width: 100%;
     height: 100%
 }
+
+body.wp-admin #hncore .hnmgbox-type-import .hnmgbox-label {
+    display: none;
+}
