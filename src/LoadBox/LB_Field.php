@@ -441,9 +441,9 @@ class LB_Field {
                         $this->args['options']['tinymce'] = array();
                     }
                     $this->args['options']['tinymce']['setup'] = 'function(wp_editor){
-                        window.XBOX.on_setup_wp_editor(wp_editor);
+                        window.HNMGBOX.on_setup_wp_editor(wp_editor);
                         wp_editor.on("init", function(args) {
-                            window.XBOX.on_init_wp_editor(wp_editor, args);
+                            window.HNMGBOX.on_init_wp_editor(wp_editor, args);
                         });
                     }';
                 }

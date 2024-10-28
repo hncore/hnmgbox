@@ -72,7 +72,7 @@ function my_advanced_metabox(){
 		'layout' => 'boxed',//wide
 		'fields_prefix' => 'xf_',
 		'header' => array(
-			'icon' => '<img src="'.XBOX_URL.'img/hnmgbox-light.png"/>',
+			'icon' => '<img src="'.HNMGBOX_URL.'img/hnmgbox-light.png"/>',
 			'desc' => 'Custom description for metabox',
 		),
 	);
@@ -214,9 +214,9 @@ function my_advanced_metabox(){
 					'type' => 'image_selector',
 					'default' => 'left',
 					'items' => array(
-						'left' => XBOX_URL.'example/img/logo-position-left.png',
-						'right' => XBOX_URL.'example/img/logo-position-right.png',
-						'center' => XBOX_URL.'example/img/logo-position-center.png'
+						'left' => HNMGBOX_URL.'example/img/logo-position-left.png',
+						'right' => HNMGBOX_URL.'example/img/logo-position-right.png',
+						'center' => HNMGBOX_URL.'example/img/logo-position-center.png'
 					),
 					'options' => array(
 						'width' => '155px',
@@ -264,9 +264,9 @@ function my_advanced_metabox(){
 					'type' => 'image_selector',
 					'default' => 'header1',
 					'items' => array(
-						'header1' => XBOX_URL.'example/img/header1.png',
-						'header2' => XBOX_URL.'example/img/header2.png',
-						'header3' => XBOX_URL.'example/img/header3.png'
+						'header1' => HNMGBOX_URL.'example/img/header1.png',
+						'header2' => HNMGBOX_URL.'example/img/header2.png',
+						'header3' => HNMGBOX_URL.'example/img/header3.png'
 					),
 					'options' => array(
 						'width' => '200px',
@@ -695,9 +695,9 @@ jQuery(document).ready(function($) {
 				'type' => 'image_selector',
 				'default' => 'demo1',
 				'items' => array(
-					'demo1' => XBOX_URL.'example/img/demo1.png',
-					'demo2' => XBOX_URL.'example/img/demo2.png',
-					'demo3' => XBOX_URL.'example/img/demo3.png',
+					'demo1' => HNMGBOX_URL.'example/img/demo1.png',
+					'demo2' => HNMGBOX_URL.'example/img/demo2.png',
+					'demo3' => HNMGBOX_URL.'example/img/demo3.png',
 				),
 				'items_desc' => array(
 					'demo1' => 'Demo 1',
@@ -716,9 +716,9 @@ jQuery(document).ready(function($) {
 				'type' => 'image_selector',
 				'default' => 'right',
 				'items' => array(
-					'left' => XBOX_URL.'example/img/logo-position-left.png',
-					'right' => XBOX_URL.'example/img/logo-position-right.png',
-					'center' => XBOX_URL.'example/img/logo-position-center.png'
+					'left' => HNMGBOX_URL.'example/img/logo-position-left.png',
+					'right' => HNMGBOX_URL.'example/img/logo-position-right.png',
+					'center' => HNMGBOX_URL.'example/img/logo-position-center.png'
 				),
 				'options' => array(
 					'width' => '100px',
@@ -744,10 +744,10 @@ jQuery(document).ready(function($) {
 				'name' => 'Select with images',
 				'type' => 'select',
 				'items' => array(
-					'jenny' => '<img class="ui mini avatar image" src="'.XBOX_URL.'example/img/avatar/jenny.jpg">Jenny Hess',
-					'elliot' => '<img class="ui mini avatar image" src="'.XBOX_URL.'example/img/avatar/elliot.jpg">Elliot Fu',
-					'stevie' => '<img class="ui mini avatar image" src="'.XBOX_URL.'example/img/avatar/stevie.jpg">Stevie',
-					'christian' => '<img class="ui mini avatar image" src="'.XBOX_URL.'example/img/avatar/christian.jpg">Christian',
+					'jenny' => '<img class="ui mini avatar image" src="'.HNMGBOX_URL.'example/img/avatar/jenny.jpg">Jenny Hess',
+					'elliot' => '<img class="ui mini avatar image" src="'.HNMGBOX_URL.'example/img/avatar/elliot.jpg">Elliot Fu',
+					'stevie' => '<img class="ui mini avatar image" src="'.HNMGBOX_URL.'example/img/avatar/stevie.jpg">Stevie',
+					'christian' => '<img class="ui mini avatar image" src="'.HNMGBOX_URL.'example/img/avatar/christian.jpg">Christian',
 				),
 				'options' => array(
 					'sort' => 'desc'
@@ -781,9 +781,9 @@ jQuery(document).ready(function($) {
                 'default' => 'fab fa-apple',
                 'items' => array_merge(
                     array(
-                        XBOX_URL .'img/svg/cake.svg' => "<img src='".XBOX_URL ."img/svg/cake.svg'>",
-                        XBOX_URL .'img/svg/cart.svg' => "<img src='".XBOX_URL ."img/svg/cart.svg'>",
-                        XBOX_URL .'img/svg/cash.svg' => "<img src='".XBOX_URL ."img/svg/cash.svg'>",
+                        HNMGBOX_URL .'img/svg/cake.svg' => "<img src='".HNMGBOX_URL ."img/svg/cake.svg'>",
+                        HNMGBOX_URL .'img/svg/cart.svg' => "<img src='".HNMGBOX_URL ."img/svg/cart.svg'>",
+                        HNMGBOX_URL .'img/svg/cash.svg' => "<img src='".HNMGBOX_URL ."img/svg/cash.svg'>",
                     ),
                     XboxItems::icon_fonts()
                 ),
