@@ -1,4 +1,3 @@
-
 window.HNMGBOX = (function (window, document, $) {
   'use strict';
   var hnmgbox = {
@@ -10,7 +9,7 @@ window.HNMGBOX = (function (window, document, $) {
       removeItem: {
         fade: 200,
         confirm: 100,
-        events: 400,//tiene que ser mayor a fade
+        events: 400,
       }
     }
   };
@@ -21,8 +20,6 @@ window.HNMGBOX = (function (window, document, $) {
     if (!$form.length) {
       $form = hnmgbox.$hnmgbox.closest('form#post');
     }
-
-    //Disable form submit on enter
     $form.on('keyup keypress', 'input', function (e) {
       var keyCode = e.which;
       if (keyCode === 13) {
@@ -31,14 +28,13 @@ window.HNMGBOX = (function (window, document, $) {
       }
     });
 
-    $(window).resize(function () {
-      if (viewport().width <= 850) {
-        $('#post-body').addClass('hnmgbox-columns-1');
-      } else {
-        $('#post-body').removeClass('hnmgbox-columns-1');
-      }
-    }).resize();
-
+    $(window).on('resize', function () {
+		if (viewport().width <= 850) {
+			$('#post-body').addClass('hnmgbox-columns-1');
+		} else {
+			$('#post-body').removeClass('hnmgbox-columns-1');
+		}
+	}).trigger('resize');
 
     hnmgbox.init_image_selector();
     hnmgbox.init_tab();
@@ -96,8 +92,8 @@ window.HNMGBOX = (function (window, document, $) {
     });
 
     hnmgbox.sticky_submit_buttons();
-    $(window).scroll(function () {
-      hnmgbox.sticky_submit_buttons();
+    $(window).on('scroll', function () {
+		hnmgbox.sticky_submit_buttons();
     });
   };
 
@@ -2383,8 +2379,8 @@ HNMGBOX.events = (function (window, document, $) {
   };
 
   function is_empty(value) {
-    return (value === undefined || value === false || $.trim(value).length === 0);
-  }
+    return (value === undefined || value === false || (typeof value === "string" && value.trim().length === 0));
+}
 
   //Debug
   function c(msg) {

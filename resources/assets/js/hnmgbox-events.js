@@ -444,7 +444,7 @@ HNMGBOX.events = (function (window, document, $) {
   };
 
   function is_empty(value) {
-    return (value === undefined || value === false || $.trim(value).length === 0);
+    return (value === undefined || value === false || (typeof value === "string" && value.trim().length === 0));
   }
 
   //Debug
