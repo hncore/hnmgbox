@@ -255,7 +255,7 @@ class LB_FieldBuilder {
 			$return .= "</div>";//.hnmgbox-section-header
 			$return .= "<div class='hnmgbox-section-body'>";
 				foreach ( $this->field->fields_objects as $field ){
-					$field_builder = new FieldBuilder( $field );
+					$field_builder = new LB_FieldBuilder( $field );
 					$return .= $field_builder->build();
 				}
 			$return .= "</div>";//.hnmgbox-section-body
@@ -470,7 +470,7 @@ class LB_FieldBuilder {
 		}
 		$return .= "<div class='$item_class' data-index='{$this->field->index}' data-type='{$item_type}'>";
 		foreach ( $this->field->fields_objects as $field ){
-			$field_builder = new FieldBuilder( $field );
+			$field_builder = new LB_FieldBuilder( $field );
 			$return .= $field_builder->build();
 		}
 		$return .= "</div>";//.hnmgbox-group-item
