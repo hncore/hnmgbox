@@ -27,6 +27,13 @@ class BoxServiceProvider extends SageServiceProvider {
         $this->app->make(LB_MetaBox::class);
         $this->app->make(LB_LoadCore::class);
         $this->app->make(LB_LoadBox::class);
+		if (is_admin() && !has_action('hnmg_admin_init')) {
+			do_action('hnmg_admin_init');
+		}
+		if (!has_action('hnmg_init')) {
+			do_action('hnmg_init');
+		}
+
     }
 	
 	public function constants(){
