@@ -113,15 +113,17 @@ class LB_Metabox extends LB_LoadCore {
         return $show;
     }
 
-	public function save_metabox( $post_id, $post, $update ){
-        if( ! in_array( $post->post_type, $this->arg( 'post_types' ) ) ){
-            return $post_id;
-        }
-        if( ! $this->can_save_metabox( $post ) ){
-            return $post_id;
-        }
-        $this->save_fields( $post_id, $_POST );
-    }
+	public function save_metabox( $post_id, $post, $update ) {
+		if ( ! in_array( $post->post_type, $this->arg( 'post_types' ) ) ) {
+			return $post_id;
+		}
+		if ( ! $this->can_save_metabox( $post ) ) {
+			return $post_id;
+		}
+		$meta_key = $this->args['id']; 
+		$this->save_fields( $post_id, $_POST, $meta_key );
+	}
+
 	
 	public function set_field_value( $field_id, $value = '', $post_id = '' ){
         $field_id = $this->get_field_id( $field_id );
@@ -134,28 +136,24 @@ class LB_Metabox extends LB_LoadCore {
         return update_post_meta( $post_id, $field_id, $value );
     }
 	
-	public function get_field_value( $field_id, $post_id = '', $default = '' ){
-        $field_id = $this->get_field_id( $field_id );
-        if( empty( $post_id ) ){
-            $post_id = $this->get_object_id();
-            if( empty( $post_id ) ){
-                $post_id = LB_Functions::get_the_ID();
-            }
-        }
-        if( ! in_array( get_post_type( $post_id ), $this->arg( 'post_types' ) ) ){
-            return $default;
-        }
-		$all_options = get_post_meta( $post_id, HNMG_META, true );
-		if( is_array( $all_options ) && isset( $all_options[$field_id] ) ){
-			return $all_options[$field_id];
+	public function get_field_value( $field_id, $post_id = '', $default = '' ) {
+		$field_id = $this->get_field_id( $field_id );
+		if ( empty( $post_id ) ) {
+			$post_id = $this->get_object_id();
+			if ( empty( $post_id ) ) {
+				$post_id = LB_Functions::get_the_ID();
+			}
 		}
-		
-        $value = get_post_meta( $post_id, $field_id, true );
-        if( LB_Functions::is_empty( $value ) ){
-            return $default;
-        }
-        return $value;
-    }
+		if ( ! in_array( get_post_type( $post_id ), $this->arg( 'post_types' ) ) ) {
+			return $default;
+		}
+		$all_options = get_post_meta( $post_id, $this->arg('id'), true );
+		if ( is_array( $all_options ) && isset( $all_options[ $field_id ] ) ) {
+			return $all_options[ $field_id ];
+		}
+		return $default;
+	}
+
 	
 	public function can_save_metabox( $post ){
         if( isset( $_POST[$this->get_nonce()] ) ){

@@ -28,7 +28,7 @@ function hnmgbox_get_field_value( $hnmgbox_id, $field_id = '', $default = '', $p
 }
 
 function hnmg_value($field_id) {
-	$value = LB_LoadBox::get_field_value( 'hnmg-options', $field_id, $default = '', $post_id = '' );
+	$value = LB_LoadBox::get_field_value(HNMG_OPTION, $field_id, $default = '', $post_id = '' );
 	if ($value === 'on') {
 		return true;
 	} elseif ($value === 'off') {

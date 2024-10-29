@@ -88,6 +88,7 @@ class LB_LoadBox {
         if( ! $hnmgbox ){
             return false;
         }
+
         switch( $hnmgbox->get_object_type() ){
             case 'metabox':
                 $value = $hnmgbox->get_field_value( $field_id, $post_id, $default );

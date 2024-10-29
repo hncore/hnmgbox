@@ -142,14 +142,16 @@ class LB_AdminPage extends LB_LoadCore {
         return array();
     }
 	
-	public function admin_action_hnmgbox_process_form(){
-        if( $this->can_save_form() ){
-            $this->save_fields( $this->get_object_id(), $_POST );
-        }
-        $goback = add_query_arg( 'settings-updated', 'true', wp_get_referer() );
-        wp_redirect( $goback );
-        exit;
-    }
+	public function admin_action_hnmgbox_process_form() {
+		if ( $this->can_save_form() ) {
+			$meta_key = $this->args['id'];
+			$this->save_fields( $this->get_object_id(), $_POST, $meta_key );
+		}
+		$goback = add_query_arg( 'settings-updated', 'true', wp_get_referer() );
+		wp_redirect( $goback );
+		exit;
+	}
+
 	
 	private function can_save_form(){
         $args = $this->arg( 'form_options' );

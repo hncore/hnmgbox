@@ -632,7 +632,7 @@ class LB_LoadCore {
         return $post_format;
     }
 	
-	public function save_fields( $post_id = 0, $data = array() ){
+	public function save_fields( $post_id = 0, $data = array(), $meta_key = '' ){
 		$data = ! empty( $data ) ? $data : $_POST;
 		$this->set_object_id();
 		$updated_fields = array();
@@ -653,35 +653,40 @@ class LB_LoadCore {
 		foreach ( $this->fields_objects as $field ){
 			$field_id = $field->arg( 'id' );
 			$field_value = isset( $data[ $field_id ] ) ? $data[ $field_id ] : '';
-			if( $field->arg( 'type' ) == 'section' ){
-				foreach ( $field->fields_objects as $_field ){
+			if ( $field->arg( 'type' ) == 'section' ) {
+				foreach ( $field->fields_objects as $_field ) {
 					$sub_field_id = $_field->arg( 'id' );
 					$sub_field_value = isset( $data[ $sub_field_id ] ) ? $data[ $sub_field_id ] : '';
-					if(isset($data['post_type']) == 'post' ){
+					if ( strpos( $meta_key, '_metabox_options' ) !== false ) {
 						$haun_metabox_options[ $sub_field_id ] = $sub_field_value;
 					} else {
 						$updated = $this->save_field( $_field, $data );
-						if( $updated ){
+						if ( $updated ) {
 							$updated_fields[] = $updated;
 						}
 					}
 				}
 			} else {
-				if( isset($data['post_type']) == 'post'){
+				if ( strpos( $meta_key, '_metabox_options' ) !== false ) {
 					$haun_metabox_options[ $field_id ] = $field_value;
 				} else {
 					$updated = $this->save_field( $field, $data );
-					if( $updated ){
+					if ( $updated ) {
 						$updated_fields[] = $updated;
 					}
 				}
 			}
+
 		}
-		if( isset($data['post_type']) == 'post' && ! empty( $haun_metabox_options ) ){
-			update_post_meta( $post_id, HNMG_META,  $haun_metabox_options );
-			$post_format_type = $this->get_post_format( $post_format );
-			set_post_format( $post_id, $post_format_type );
+		
+		if ( ! empty( $haun_metabox_options ) ) {
+			update_post_meta( $post_id, $meta_key, $haun_metabox_options );
+			if ( $meta_key === HNMG_METAPOST && ! empty( $post_format ) ) {
+				$post_format_type = $this->get_post_format( $post_format );
+				set_post_format( $post_id, $post_format_type );
+			}
 		}
+		
 		do_action( "hnmgbox_after_save_fields", $this->object_id, $updated_fields, $this );
 		do_action( "hnmgbox_after_save_fields_{$this->object_type}", $this->object_id, $updated_fields, $this );
 	}
