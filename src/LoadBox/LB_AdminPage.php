@@ -62,7 +62,7 @@ class LB_AdminPage extends LB_LoadCore {
 			$this->args['title'] = sprintf(__('Options %s', 'hnmgbox'), $current_theme->get('Name'));
 		}
 
-		if ($this->args['parent'] === 'hnmg-dashboard') {
+		if (menu_page_url('hnmg-dashboard', false)) {
 			add_submenu_page('hnmg-dashboard', $this->args['title'], $this->args['menu_title'], $this->args['capability'], $this->args['id'], [$this, 'build_admin_page'], 1);
 		} elseif ($this->args['parent'] === false) {
 			add_menu_page($this->args['title'], $this->args['menu_title'], $this->args['capability'], $this->args['id'], [$this, 'build_admin_page'], $this->args['icon'], $this->args['position']);
