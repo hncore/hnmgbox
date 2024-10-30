@@ -653,29 +653,36 @@ class LB_LoadCore {
 		foreach ( $this->fields_objects as $field ){
 			$field_id = $field->arg( 'id' );
 			$field_value = isset( $data[ $field_id ] ) ? $data[ $field_id ] : '';
-			if ( $field->arg( 'type' ) == 'section' ) {
-				foreach ( $field->fields_objects as $_field ) {
-					$sub_field_id = $_field->arg( 'id' );
-					$sub_field_value = isset( $data[ $sub_field_id ] ) ? $data[ $sub_field_id ] : '';
-					if ( strpos( $meta_key, '_metabox_options' ) !== false ) {
-						$haun_metabox_options[ $sub_field_id ] = $sub_field_value;
+			if ($field->arg('type') == 'section') {
+				foreach ($field->fields_objects as $_field) {
+					$sub_field_id = $_field->arg('id');
+					$sub_field_value = isset($data[$sub_field_id]) ? $data[$sub_field_id] : '';
+					if (strpos($meta_key, '_metabox_options') !== false) {
+						if ($_field->arg('type') == 'group' && isset($sub_field_value['1000'])) {
+							unset($sub_field_value['1000']);
+						}
+						$haun_metabox_options[$sub_field_id] = $sub_field_value;
 					} else {
-						$updated = $this->save_field( $_field, $data );
-						if ( $updated ) {
+						$updated = $this->save_field($_field, $data);
+						if ($updated) {
 							$updated_fields[] = $updated;
 						}
 					}
 				}
 			} else {
-				if ( strpos( $meta_key, '_metabox_options' ) !== false ) {
-					$haun_metabox_options[ $field_id ] = $field_value;
+				if (strpos($meta_key, '_metabox_options') !== false) {
+					if ($field->arg('type') == 'group' && isset($field_value['1000'])) {
+						unset($field_value['1000']);
+					}
+					$haun_metabox_options[$field_id] = $field_value;
 				} else {
-					$updated = $this->save_field( $field, $data );
-					if ( $updated ) {
+					$updated = $this->save_field($field, $data);
+					if ($updated) {
 						$updated_fields[] = $updated;
 					}
 				}
 			}
+
 
 		}
 		
