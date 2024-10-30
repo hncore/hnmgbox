@@ -27,15 +27,18 @@ function hnmgbox_get_field_value( $hnmgbox_id, $field_id = '', $default = '', $p
   return LB_LoadBox::get_field_value( $hnmgbox_id, $field_id, $default, $post_id );
 }
 
-function hnmg_value($field_id) {
-	$value = LB_LoadBox::get_field_value(HNMG_OPTION, $field_id, $default = '', $post_id = '' );
-	if ($value === 'on') {
-		return true;
-	} elseif ($value === 'off') {
-		return false;
-	}
-	return $value;
+function hnmg_value($field_id, $hnmgbox_id = HNMG_OPTION) {
+    $value = LB_LoadBox::get_field_value($hnmgbox_id, $field_id, $default = '', $post_id = '');
+
+    if ($value === 'on') {
+        return true;
+    } elseif ($value === 'off') {
+        return false;
+    }
+
+    return $value;
 }
+
 
 add_shortcode( 'hnmgbox_get_field_value', 'hnmgbox_get_field_value_shortcode' );
 function hnmgbox_get_field_value_shortcode( $atts ) {
