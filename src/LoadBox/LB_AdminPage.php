@@ -53,16 +53,21 @@ class LB_AdminPage extends LB_LoadCore {
     }
 	
 	public function add_admin_page() {
-		if ( ! current_user_can( 'administrator' ) ) {
+		if (!current_user_can('administrator')) {
 			return false;
 		}
-		if ( 'Theme Options' === $this->args['title'] || 'Tùy Chọn Themes' === $this->args['title'] ) {
+		if (in_array($this->args['title'], ['Theme Options', 'Tùy Chọn Themes'])) {
 			$current_theme = wp_get_theme();
 			$this->args['menu_title'] = sprintf(__('Options %s', 'hnmgbox'), $current_theme->get('Name'));
 			$this->args['title'] = sprintf(__('Options %s', 'hnmgbox'), $current_theme->get('Name'));
-			add_submenu_page('hnmg-dashboard', $this->args['title'], $this->args['menu_title'], $this->args['capability'], $this->args['id'], array( $this, 'build_admin_page' ), 1);
+		}
+
+		if ($this->args['parent'] === 'hnmg-dashboard') {
+			add_submenu_page('hnmg-dashboard', $this->args['title'], $this->args['menu_title'], $this->args['capability'], $this->args['id'], [$this, 'build_admin_page'], 1);
+		} elseif ($this->args['parent'] === false) {
+			add_menu_page($this->args['title'], $this->args['menu_title'], $this->args['capability'], $this->args['id'], [$this, 'build_admin_page'], $this->args['icon'], $this->args['position']);
 		} else {
-			add_submenu_page( "", $this->args['title'], $this->args['menu_title'], $this->args['capability'], $this->args['id'], array( $this, 'build_admin_page' ) );
+			add_submenu_page('', $this->args['title'], $this->args['menu_title'], $this->args['capability'], $this->args['id'], [$this, 'build_admin_page']);
 		}
 	}
 	
