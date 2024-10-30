@@ -87,7 +87,7 @@ class LB_AdminPage extends LB_LoadCore {
         if( $settings_error ){
             settings_errors( $this->settings_notice_key() );
         }
-        $display .= "<div class='wrap hnmgbox-wrap-admin-page'>";
+        $display .= "<div id=\"hncore\" class='wrap hnmgbox-wrap-admin-page'>";
         if( ! empty( $this->args['title'] ) && empty( $this->args['header'] ) ){
             $display .= "<h1 class='hnmgbox-admin-page-title'>";
             $display .= "<i class='hnmgbox-icon hnmgbox-icon-cog'></i>";
