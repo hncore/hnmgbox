@@ -1,5 +1,5 @@
 <?php
-use HNMG\LoadBox\LB_Metabox;
+use HNMG\LoadBox\LB_MetaBox;
 use HNMG\LoadBox\LB_AdminPage;
 use HNMG\LoadBox\LB_LoadBox;
 
@@ -14,7 +14,7 @@ function hnmgbox_get( $hnmgbox_id ){
 
 
 function hnmgbox_new_metabox( $options = array() ){
-  return new LB_Metabox( $options );
+  return new LB_MetaBox( $options );
 }
 
 

@@ -28,7 +28,7 @@ class LB_LoadBox {
         $load_scripts = false;
         $screen = get_current_screen();
         foreach( self::$loadbox as $hnmgbox ){
-            if( is_a( $hnmgbox, 'HNMG\LoadBox\LB_Metabox' ) ){
+            if( is_a( $hnmgbox, 'HNMG\LoadBox\LB_MetaBox' ) ){
                 if( in_array( $screen->post_type, (array) $hnmgbox->arg( 'post_types' ) ) ){
                     $load_scripts = true;
                 }

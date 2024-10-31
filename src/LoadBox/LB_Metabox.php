@@ -5,7 +5,7 @@ namespace HNMG\LoadBox;
 use HNMG\LoadBox\LB_Functions;
 use HNMG\LoadBox\LB_LoadCore;
 
-class LB_Metabox extends LB_LoadCore {
+class LB_MetaBox extends LB_LoadCore {
 
 	public function __construct( $args = array() ){
         if( ! is_array( $args ) || LB_Functions::is_empty( $args ) || empty( $args['id'] ) ){
