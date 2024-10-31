@@ -19,12 +19,12 @@ class LB_Field {
 	public $parent_type    = null;
 	public $row_level      = -1;
 
-	public function __construct( $field_args = array(), $hnmgbox, $parent_object ){
+	public function __construct( $hnmgbox, $parent_object, $field_args = array() ) {
 		$this->id         = $field_args['id'];
-		$this->hnmgbox_id    = $hnmgbox->id;
+		$this->hnmgbox_id = $hnmgbox->id;
 		$this->set_args( $field_args );
 
-		if( is_a( $parent_object, 'HNMG\LoadBox\LB_Field' ) ){
+		if ( is_a( $parent_object, 'HNMG\LoadBox\LB_Field' ) ) {
 			$this->add_parent( $parent_object );
 		}
 	}

@@ -309,7 +309,7 @@ class LB_LoadCore {
         $field_id = $this->get_field_id( $id );
         $field_args['id'] = $field_id;
         $object->fields[$field_id] = $field_args;
-        $object->fields_objects[$field_id] = new LB_Field( $field_args, $this, $object );
+        $object->fields_objects[$field_id] = new LB_Field( $this, $object, $field_args );
         if( $this->in_mixed_field( $field_id, $object->fields ) ){
             $object->get_field( $field_id )->set_in_mixed( true );
         }

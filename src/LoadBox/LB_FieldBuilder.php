@@ -648,7 +648,7 @@ class LB_FieldBuilder {
 					$operator = $operator == '=' ? '==' : $operator;
 				}
 				if( in_array( $operator,  array('==', '!=', '>', '>=', '<', '<=') ) ){
-					$show = LB_Functions::compare_values_by_operator( $field_value, $operator, $value );
+					$show = LB_Functions::compare_values_by_operator( $field_value, $value, $operator );
 				} else if( in_array( $operator,  array('in', 'not in' ) ) ){
 					if( ! empty( $value ) && is_array( $value ) ){
 						$show = $operator == 'in' ? in_array( $field_value, $value ) : ! in_array( $field_value, $value );
@@ -676,7 +676,7 @@ class LB_FieldBuilder {
 					$operator = $operator == '=' ? '==' : $operator;
 				}
 				if( in_array( $operator,  array('==', '!=', '>', '>=', '<', '<=') ) ){
-					$hide = LB_Functions::compare_values_by_operator( $field_value, $operator, $value );
+					$hide = LB_Functions::compare_values_by_operator( $field_value, $value, $operator );
 				} else if( in_array( $operator,  array('in', 'not in' ) ) ){
 					if( ! empty( $value ) && is_array( $value ) ){
 						$hide = $operator == 'in' ? in_array( $field_value, $value ) : ! in_array( $field_value, $value );

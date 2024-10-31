@@ -354,33 +354,32 @@ class LB_Functions {
         return false;
     }
 
-    public static function compare_values_by_operator( $value1, $operator = '', $value2 ){
-        switch( $operator ){
-            case '<':
-                return $value1 < $value2;
-                break;
-            case '<=':
-                return $value1 <= $value2;
-                break;
-            case '>':
-                return $value1 > $value2;
-                break;
-            case '>=':
-                return $value1 >= $value2;
-                break;
-            case '==':
-            case '=':
-                return $value1 == $value2;
-                break;
-            case '!=':
-                return $value1 != $value2;
-                break;
-            default:
-                return false;
-        }
-        return false;
-    }
-
+    public static function compare_values_by_operator( $value1, $value2, $operator = '' ) {
+		switch( $operator ) {
+			case '<':
+				return $value1 < $value2;
+				break;
+			case '<=':
+				return $value1 <= $value2;
+				break;
+			case '>':
+				return $value1 > $value2;
+				break;
+			case '>=':
+				return $value1 >= $value2;
+				break;
+			case '==':
+			case '=':
+				return $value1 == $value2;
+				break;
+			case '!=':
+				return $value1 != $value2;
+				break;
+			default:
+				return false;
+		}
+		return false;
+	}
 
     public static function is_fontawesome_version( $version = '4.x' ){
         $version = str_replace(array('.', 'x', 'X'), '', $version);
