@@ -688,7 +688,7 @@ class LB_LoadCore {
 		
 		if ( ! empty( $haun_metabox_options ) ) {
 			update_post_meta( $post_id, $meta_key, $haun_metabox_options );
-			if ( $meta_key === HNMG_METAPOST && ! empty( $post_format ) ) {
+			if ( $meta_key === HNMG_META && ! empty( $post_format ) ) {
 				$post_format_type = $this->get_post_format( $post_format );
 				set_post_format( $post_id, $post_format_type );
 			}
